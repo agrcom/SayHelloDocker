@@ -51,6 +51,7 @@
             <version>0.4.11</version>
 
             <configuration>
+                <dockerHost>https://192.168.99.100:2376</dockerHost>
                 <imageName>agrcom/${project.groupId}</imageName>
                 <dockerDirectory>src/main/docker</dockerDirectory>
                 <resources>
