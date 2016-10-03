@@ -1,6 +1,7 @@
 language: java
 
-    sudo: reuired # for docker
+#for docker
+    sudo: required
 
 # The Travis CI environment provides Oracle JDK 7 (default),
 # so we need to force use jdk8 instead.
