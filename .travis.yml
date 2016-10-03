@@ -11,8 +11,8 @@ jdk:
 
 # push application image to docker registry
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push agrcom/docker-springboot-training:latest;
+     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+     docker push agrcom/docker-springboot-training:latest;
     fi
 
 # support for docker
