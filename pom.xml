@@ -52,7 +52,7 @@
 
             <configuration>
                 <dockerHost>https://192.168.99.100:2376</dockerHost>
-                <imageName>agrcom/${project.groupId}</imageName>
+                <imageName>agrcom/${project.artifactId}</imageName>
                 <dockerDirectory>src/main/docker</dockerDirectory>
                 <resources>
                     <resource>
