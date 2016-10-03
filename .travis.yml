@@ -1,19 +1,20 @@
+# travis need to have provided language type to start proper build process.
 language: java
 
 #for docker
-    sudo: required
+sudo: required
 
 # The Travis CI environment provides Oracle JDK 7 (default),
 # so we need to force use jdk8 instead.
-    jdk:
-      - oraclejdk8
+jdk:
+  - oraclejdk8
 
 # push application image to docker registry
-    - if [ "$TRAVIS_BRANCH" == "master" ]; then
-      docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-      docker push agrcom/docker-springboot-training:latest;
-      fi
+- if [ "$TRAVIS_BRANCH" == "master" ]; then
+  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+  docker push agrcom/docker-springboot-training:latest;
+  fi
 
 # support for docker
-    services:
-        - docker
+services:
+    - docker
