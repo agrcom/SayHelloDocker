@@ -9,10 +9,11 @@ sudo: required
 jdk:
   - oraclejdk8
 
+after_success:
 # push application image to docker registry
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-     docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-     docker push agrcom/docker-springboot-training:latest;
+- if [ "$TRAVIS_BRANCH" == "master" ]; then
+  docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+  docker push agrcom/docker-springboot-training:latest;
     fi
 
 # support for docker
