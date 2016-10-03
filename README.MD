@@ -15,3 +15,9 @@ To solve above problem add new env varible
 If you got below error after run "package docker:build"  in inteliJ, let's try run the same command with mvn from CLI
 
 	 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder". SLF4J: Defaulting to no-operation (NOP) logger implementation SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+
+## Travis Parsing issue
+WebLint for travis .yaml files
+
+	http://lint.travis-ci.org/
